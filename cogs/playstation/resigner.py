@@ -412,7 +412,7 @@ Port = {port}""")
                 embed.set_author(name= f'Thank you {interaction.user.name} for Resigning 😄', icon_url=interaction.user.avatar)
                 embed.add_field(name=f"**1)** **DOWNLOAD MOUNTED SAVE**", value='You must select this option __**BEFORE**__ unmounting.', inline=False)
                 embed.add_field(name=f"**2)** **DOWNLOAD UNMOUNTED SAVE**", value='You must select this option __**AFTER**__ unmounting.', inline=False)
-                embed.add_field(name=f"💌 __**RESIGNED:**__", value= f'***{gameid}*** resigned as***{resignid}***', inline=False)
+                embed.add_field(name=f"💌 __**RESIGNED:**__", value= f'***{gameid}*** resigned as ***{resignid}***', inline=False)
                 embed.set_footer(text="Both options may be selected if the save is un/mounted properly.")
                 await interaction.response.send_message(embed=embed, view=download_resign(),ephemeral=True)
                 
